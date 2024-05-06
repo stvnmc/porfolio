@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   const navLinks = [
-    { title: "Home", path: "/" },
-    { title: "Projects", path: "/projects" },
-    { title: "Videos", path: "/videos" },
+    { title: "Home", path: "/porfolio" },
+    { title: "Projects", path: "/porfolio/projectos" },
+    { title: "Videos", path: "/porfolio/videos" },
   ];
 
   return (
