@@ -11,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #110f10;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,6 +36,11 @@ body {
   place-items: center;
   min-width: 320px;
   padding: 0 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -65,7 +70,53 @@ h1 {
   line-height: 2rem;
 }
 
-img {
-  width: 20px;
-  height: 100px;
+/* //////////////// projects /////////////  */
+
+.projects {
+  width: 800px;
+}
+
+.project {
+  position: relative;
+  height: 100%;
+  width: 800px;
+  background-color: rgb(38 38 38 / 1);
+  margin-bottom: 8vh;
+  border-radius: 10px;
+  border: 1px solid #414140;
+  overflow: hidden;
+}
+
+.project-img {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  transition: 5s;
+}
+
+.project-img img {
+  border-radius: 12px;
+}
+
+.project .text {
+  display: flex;
+  bottom: 0;
+  color: rgb(232, 226, 226);
+  padding: 1%;
+  width: 100%;
+  height: 12vh;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project .text h2 {
+  font-size: 30px;
+  margin-bottom: 1vh;
+}
+
+.project .text div {
+  display: flex;
+  align-items: center;
+  width: 94%;
+  justify-content: space-between;
 }
