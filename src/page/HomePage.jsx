@@ -3,6 +3,8 @@ import React from "react";
 // icons
 import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 
+import perfil from "../img/perfil.png";
+
 const HomePage = () => {
   return (
     <div className="home">
@@ -33,17 +35,20 @@ const HomePage = () => {
         some truly incredible people in the industry.
       </p>
 
-      <h1>tecnologias usadas</h1>
-
-      <div>
+      <div className="social-networks">
         <div>
+          <img src={perfil} />
+          <p>Mira mi actividad</p>
           <FaGithub />
         </div>
         <div>
-          <img src={""} />
+          <img src={perfil} />
+          <p>Instagram personal</p>
           <FaInstagram />
         </div>
         <div>
+          <img src={perfil} />
+          <p>Mira como programo</p>
           <FaYoutube />
         </div>
       </div>

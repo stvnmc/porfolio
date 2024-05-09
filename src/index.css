@@ -35,6 +35,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
+  font-size: 20px;
   padding: 0 0;
 }
 
@@ -70,11 +71,48 @@ h1 {
   line-height: 2rem;
 }
 
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-networks div {
+  display: flex;
+  width: 236px;
+  height: 74px;
+  align-items: center;
+
+  background: #333131;
+  border-radius: 10px;
+  border: 2px solid #ffffff31;
+}
+
+.social-networks div p {
+  margin-left: 6px;
+  font-size: 0.7em;
+  line-height: 1rem;
+  width: 119px;
+}
+
+.social-networks div img {
+  margin-left: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffffff15;
+}
+
+.social-networks div svg {
+  margin-left: 8px;
+
+  width: 30px;
+  height: 30px;
+}
+
 /* //////////////// projects /////////////  */
 
 .project {
   position: relative;
-
   width: 850px;
   height: 500px;
   background-color: rgb(92 91 91 / 37%);
