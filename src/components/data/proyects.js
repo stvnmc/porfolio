@@ -37,7 +37,7 @@ export const projects = [
     link: "https://stvnmc.github.io/Spotify/",
     background:
       "linear-gradient(180deg, rgb(255 240 240 / 0%) 0%, rgb(3 3 3) 32%)",
-    color: "rgb(201 191 191)",
+    color: "rgb(240 237 237)",
   },
   {
     title: "Listashop",

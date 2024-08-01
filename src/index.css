@@ -22,7 +22,7 @@
   padding: 2rem;
   text-align: center;
   margin: auto;
-  max-width: 850px;
+  max-width: 1000px;
 }
 
 a {
@@ -32,11 +32,8 @@ a {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   font-size: 20px;
-  padding: 0 0;
 }
 
 img {
@@ -45,13 +42,19 @@ img {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
   line-height: 1.1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
 }
 
 .navbar ul {
   display: flex;
-  margin-bottom: 4rem;
   gap: 1.25rem;
 }
 
@@ -59,16 +62,28 @@ h1 {
   list-style-type: none;
 }
 
+.perfil {
+  width: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 65px;
+}
+
+/* home */
+
 .home {
   gap: 2.5rem;
   display: flex;
   text-align: left;
   flex-direction: column;
+  margin-top: 60px;
 }
 
-.home p {
+.info-about-me p {
+  width: 619px;
   font-size: 1.5rem;
   line-height: 2rem;
+  margin-bottom: 40px;
 }
 
 .social-networks {
@@ -111,30 +126,35 @@ h1 {
 
 /* //////////////// projects /////////////  */
 
+.cont-projects {
+  margin-bottom: 50px;
+}
+
+.cont-projects h1 {
+  margin-bottom: 63px;
+}
+
 .project {
   position: relative;
-  width: 850px;
-  height: 500px;
+  width: 671px;
+  height: 369px;
   background-color: rgb(92 91 91 / 37%);
-  margin-bottom: 8vh;
+  margin-bottom: 40px;
   border-radius: 10px;
   border: 1px solid #757070;
   overflow: hidden;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .project-img {
   display: flex;
   width: 100%;
-  height: 54vh;
-  transition: 5s;
+  transition: 4s;
 }
 
 .project .text {
@@ -142,32 +162,54 @@ h1 {
   z-index: 1;
   bottom: 0;
   display: flex;
-  padding: 19px 22px;
+  padding: 13px 15px;
   width: 100%;
-  height: 19vh;
+  height: 160px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
 }
 
 .project .text h2 {
-  font-size: 30px;
-  margin-bottom: 1vh;
+  font-size: 1.4em;
 }
 
 .project .text div {
   display: flex;
   align-items: center;
-  width: 94%;
+  width: 100%;
   justify-content: space-between;
 }
 
 .project .text div svg {
-  font-size: 2.5em;
+  font-size: 1em;
+}
+.project .text div p {
+  width: 573px;
+  font-size: 0.9em;
 }
 
 /* hover projects */
 .project:hover {
-  width: 875px;
-  height: 575px;
+  width: 700px;
+  height: 380px;
+}
+
+/*//////  technology ////////*/
+
+.cont-technology{
+  margin-bottom: 50px;
+}
+
+.icons-technology {
+  display: flex;
+  width: 498px;
+  margin: 52px 13px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-technology svg {
+  width: 105px;
+  height: 94px;
 }

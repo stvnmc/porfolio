@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
+import perfil from "../img/perfil.png";
 
 function NavBar() {
   const navLinks = [
     { title: "Home", path: "/porfolio" },
-    { title: "Projects", path: "/porfolio/projectos" },
-    { title: "Videos", path: "/porfolio/videos" },
+    { title: "All Projects", path: "/porfolio/projectos" },
   ];
 
   return (
@@ -16,6 +16,9 @@ function NavBar() {
           </li>
         ))}
       </ul>
+      <div className="perfil">
+        <img src={perfil} />
+      </div>
     </div>
   );
 }

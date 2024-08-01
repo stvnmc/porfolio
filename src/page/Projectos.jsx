@@ -5,13 +5,11 @@ import { projects } from "../components/data/proyects";
 
 const Projectos = () => {
   return (
-    <main>
-      <div className="projects">
-        {projects.map((project, index) => (
-          <Project key={index} project={project} index={index} />
-        ))}
-      </div>
-    </main>
+    <div className="projects">
+      {projects.map((project, index) => (
+        <Project key={index} project={project} index={index} />
+      ))}
+    </div>
   );
 };
 
